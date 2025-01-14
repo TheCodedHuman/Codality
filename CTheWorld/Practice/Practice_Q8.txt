@@ -1,0 +1,19 @@
+/*Practice Question 8
+Calculate Area of Triangle*/
+
+// includes
+#include<stdio.h>
+
+// defnied
+int main(){
+    float base, height;
+    
+    printf("Enter Height Measurement\t->\t");
+    scanf("%f", &base);
+    printf("Enter Height Measurement\t->\t");
+    scanf("%f", &height);
+    
+    printf("Area of Triangle is %f", 0.5 * base * height);
+    
+    return 0;
+}

@@ -1,0 +1,22 @@
+/* Practice Question 5
+Simple Interest Calculator */
+
+// includes
+#include <stdio.h>
+
+// defined
+int main() {
+    float p, r, t, si;
+
+    printf("Value of p: ");
+    scanf("%f", &p);
+    printf("Value of r: ");
+    scanf("%f", &r);
+    printf("Value of t: ");
+    scanf("%f", &t);
+
+    si = (p * r * t) / 100;
+    printf("Simple Interest is: %.2f\n", si);
+
+    return 0;
+}

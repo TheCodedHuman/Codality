@@ -1,0 +1,37 @@
+// Here we are fabricating a simple program of C
+
+// includes
+# include <stdio.h>
+
+// defined
+int main(){
+    // First Program
+    printf("Hello World\n");
+    
+    // Some Data Types
+    // printf("\n");					\\ Can't we give new line like this ?
+    int a = 5;
+    float pi = 3.145464564;
+    char star = '*';
+    
+    printf("%d is integer\n", a);
+    printf("%f is float\n", pi);
+    printf("%c is character\n", star);
+    
+    // User Input
+    int age;
+    printf("\nEnter your age -> ");
+    scanf("%d\n", &age);
+    printf("Age is : %d", age);
+    
+    // Some Operators
+    // int sum = a + age;
+    printf("\nSum is %d", a + age);
+    printf("\nDifference is %d", a - age);
+    printf("\nMultiply is %d", a * age);
+    printf("\nQuotient is %d", a / age);
+    printf("\nRemainder is %d", a % age);
+    // printf("\nExponent is %d", a ** age);
+    
+    return 0;
+}

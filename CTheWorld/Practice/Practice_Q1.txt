@@ -1,0 +1,20 @@
+/*Practice Question 1
+Calculate area of square*/
+
+// includes
+# include <stdio.h>
+
+// defined
+int main(){
+    int side;
+    printf("\nEnter measurement of a Side\t->\t");
+    scanf("%d", &side);
+    printf("Area of that square is %d", side*side);
+    
+    // but for float
+    float side_;
+    printf("\nEnter measurement of a Side\t->\t");
+    scanf("%f", &side_);
+    printf("Area of that square in float is %f", side_*side_);
+    return 0;
+}

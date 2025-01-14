@@ -1,0 +1,2 @@
+/*Practice Question 16
+Print the smallest number*/

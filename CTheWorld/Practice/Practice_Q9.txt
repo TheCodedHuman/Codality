@@ -1,0 +1,20 @@
+/*Practice Question 9
+Calculate Exponential Values by math.h header file and pow function*/
+
+// includes
+#include<stdio.h>
+#include<math.h>
+
+// defined
+int main(){
+    float base, power;
+    
+    printf("Enter Base\t->\t");
+    scanf("%f", &base);
+    
+    printf("Enter power\t->\t");
+    scanf("%f", &power);
+    
+    printf("Value of %.2f raised to power %.2f is %.2f", base, power, pow(base, power));
+    return 0;
+}

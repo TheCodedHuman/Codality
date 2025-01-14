@@ -1,0 +1,25 @@
+/*Practice Question 15
+given string is digit or not*/
+
+/*
+#include <stdio.h>
+#include <string.h> // for strspn function
+
+int main() {
+    char str[100];
+
+    // Prompt user for input
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    // Check if the entire length of the string consists of digits
+    // Using logical AND and pointer arithmetic
+    int isDigit = (str + strspn(str, "0123456789") == str + strlen(str)) && 1;
+
+    // Output result as 0 or 1
+    printf("%d\n", isDigit);
+
+    return 0;
+}
+
+*/

@@ -1,0 +1,33 @@
+/*Practice Question 19
+Write a program to check whether a given number is positive, negative, or zero.*/
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int num;
+    
+    printf("Enter the number");
+    scanf("%d", &num);
+    
+    // check by conditional
+    if (num > 0) {
+        printf("+ve");
+    }
+    else if (num < 0) {
+        printf("-ve");
+    }
+    else {
+        printf("Pegative");
+    }
+
+    // check by ternary
+    (num == 100) ? printf("Hundred\n"):         // eventho this ain't going to work as first condition `num > 100` worked; but in actual usage we can write more than two conditions in ternary
+    (num > 0) ? printf("Positive\n") : 
+    (num < 0) ? printf("Negative\n") : 
+    printf("Zero\n");
+    
+    return 0;
+}
+
+

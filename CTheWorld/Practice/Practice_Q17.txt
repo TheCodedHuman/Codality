@@ -1,0 +1,17 @@
+/*Practice Question 17
+Program for ternary conditional statement
+for adult or not adult*/
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int age;
+    
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    
+    age>18 ? printf("Adult \n") : printf("Not Adult \n");
+    
+    return 0;
+}

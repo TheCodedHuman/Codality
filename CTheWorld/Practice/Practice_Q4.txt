@@ -1,0 +1,15 @@
+/*Practice Question 4
+Calculate Cube of User integral input (n*n*n)*/
+
+// includes
+#include<stdio.h>
+
+// defined
+int main(){
+    int n;
+    printf("Enter the value to find its cube value\t--->\t");
+    scanf("%d", &n);
+    printf("Cube of the given number is %d", n*n*n);
+    
+    return 0;   
+}

@@ -1,0 +1,74 @@
+/*Practice Question 7
+Compound Interest Calculator*/
+
+#include <stdio.h>
+#include <math.h> // Include math.h for the pow function
+
+int main() {
+    double principal, rate, time, compound_interest;
+    int n; // Number of times interest is compounded per year
+
+    // Input the values
+    printf("Enter the principal amount: ");
+    scanf("%lf", &principal);
+    printf("Enter the annual interest rate (in percentage): ");
+    scanf("%lf", &rate);
+    printf("Enter the time (in years): ");
+    scanf("%lf", &time);
+    printf("Enter the number of times interest is compounded per year: ");
+    scanf("%d", &n);
+
+    // Convert interest rate from percentage to decimal
+    rate = rate / 100.0;
+
+    // Calculate compound interest
+    compound_interest = principal * pow((1 + rate / n), n * time);
+
+    // Print the result
+    printf("The compound interest is: %.2f\n", compound_interest);
+
+    return 0;
+}
+
+
+
+
+or
+
+
+#include <stdio.h>
+
+// Function to calculate power
+double power(double base, int exponent) {
+    double result = 1.0;
+    for (int i = 0; i < exponent; i++) {
+        result *= base;
+    }
+    return result;
+}
+
+int main() {
+    double principal, rate, time, compound_interest;
+    int n; // Number of times interest is compounded per year
+
+    // Input the values
+    printf("Enter the principal amount: ");
+    scanf("%lf", &principal);
+    printf("Enter the annual interest rate (in percentage): ");
+    scanf("%lf", &rate);
+    printf("Enter the time (in years): ");
+    scanf("%lf", &time);
+    printf("Enter the number of times interest is compounded per year: ");
+    scanf("%d", &n);
+
+    // Convert interest rate from percentage to decimal
+    rate = rate / 100.0;
+
+    // Calculate compound interest using custom power function
+    compound_interest = principal * power((1 + rate / n), n * time);
+
+    // Print the result
+    printf("The compound interest is: %.2f\n", compound_interest);
+
+    return 0;
+}

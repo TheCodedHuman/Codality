@@ -1,0 +1,32 @@
+/*Practice Question 13
+Print 1(true) or 0(false) for following statements
+
+a) if it's sunday & it's snowing -> True
+b) if it's monday or it's raining -> True
+c) if a number is greater than 9 & less than 100 -> true (two digit number)
+*/
+
+// includes
+#include<stdio.h>
+
+// defined
+int main(){
+    // a
+    int isSunday = 1;
+    int isSnowing = 0;
+    printf("%d\n", isSunday && isSnowing);
+    
+    // b
+    int isMonday = 0;
+    int isRaining = 0;
+    printf("%d\n", isMonday || isRaining);
+    
+    // c
+    int a;
+    printf("Enter the number: ");
+    scanf("%d", &a);
+
+    printf("%d\n", (a>9) && (a<100));
+    
+    return 0;
+}

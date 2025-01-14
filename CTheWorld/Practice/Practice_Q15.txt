@@ -1,0 +1,24 @@
+/*Practice Question 15
+Program for conditional statement
+if age above 18 they can not vote; else not adult*/
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int age;
+    
+    printf("Enter Yor age: ");
+    scanf("%d", &age);
+    
+    if(age>18) {
+        printf("\nAdult");
+        printf("\nCan Vote");
+        printf("\nCan Drive Maybe");
+    }
+    else{
+        printf("Not Adult");
+    }
+    
+    return 0;
+}

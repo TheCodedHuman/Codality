@@ -1,0 +1,21 @@
+/*Practice Question 3
+Calculate area of Rectangle*/
+
+// includes
+#include<stdio.h>
+
+int main(){
+    float length, breadth;
+    // int area;
+    
+    printf("Enter Length Measurement:\t--->\t");
+    scanf("%f", &length);
+    
+    printf("Enter Breadth Measurement:\t--->\t");
+    scanf("%f", &breadth);
+    
+    printf("\nThe area of rectangle is %f", length* breadth);
+    // area = length*breadth;
+    // printf("\n%d", area);
+    return 0;
+}

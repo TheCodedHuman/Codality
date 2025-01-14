@@ -1,0 +1,12 @@
+/*Practice Question 10
+Do type conversion -> float type to int type*/
+
+// includes
+#include<stdio.h>
+
+// defined
+int main(){
+    int a = (int) 1.999999999999;
+    printf("%d\n", a);
+    return 0;
+}

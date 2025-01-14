@@ -1,0 +1,15 @@
+/*Practice Question 2
+Calculate perimeter and Area of Circle*/
+
+// includes
+# include <stdio.h>
+
+// defined
+int main(){
+    float rad;
+    printf("Enter the radius of Circle\t->\t");
+    scanf("%f", &rad);
+    printf("The Perimeter of Circle is %f\n", 2 * 3.14 * rad);	    // Multiplication is associative
+    printf("The Area of Circle is %.2f", 3.14 * (rad * rad));       // %.2f gives two decimal place precision
+    return 0;
+}

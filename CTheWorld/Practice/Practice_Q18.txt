@@ -1,0 +1,30 @@
+/*Practice Question 18
+Write a program to check whether a given number is even(0) or odd(1).*/
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int num;
+    
+    printf("Enter the number");
+    scanf("%d", &num);
+    
+    // check by True False
+    printf("\n%d", num%2 != 0);
+    
+    // Check by if else
+    if (num%2 == 0) {
+        printf("\nEven");
+    }
+    else{
+        printf("\nOdd");
+    }
+    
+    // check by ternary
+    num%2 == 0 ? printf("\nEven") : printf("\nOdd");
+    
+    return 0;
+}
+
+
