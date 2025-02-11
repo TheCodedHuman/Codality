@@ -1,0 +1,26 @@
+/*Practice Question 26
+Write a program to number is armstrong or not. */
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int num;
+    
+    printf("Enter the number ");
+    scanf("%s", &num);
+
+    // by binary operator &&
+    
+    // by ternary operator
+    
+    // by if-else, else if
+
+    // by switch-case
+
+
+    
+    return 0;
+}
+
+

@@ -1,0 +1,44 @@
+/*Practice Question 25
+Write a program to check a student Passed or Phailed.
+marks > 30 => Passed
+marks < 30 => Phailed*/
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int marks;
+    
+    printf("Enter the number ");
+    scanf("%d", &marks);
+
+    // by binary operator &&
+    printf("\n%d", marks>30);
+    
+    // by ternary operator
+    (marks > 30) ? printf("\npassed") : printf("\nphailed");
+    
+    // by if-else, else if
+    if (marks > 30) {
+        printf("\npassed");
+    } else {
+        printf("\nphailed");
+    }
+    
+    // by switch-case
+    switch (marks > 30) { 
+        case 0: 
+            printf("\nphailed"); 
+            break; 
+        case 1: 
+            printf("\npassed"); 
+            break; 
+        default: 
+            printf("\nInvalid marks input"); 
+            break;
+    }
+    
+    return 0;
+}
+
+

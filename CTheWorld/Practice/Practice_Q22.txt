@@ -1,0 +1,36 @@
+/*Practice Question 22
+Write a program to use switch-case statements.
+here for m, t, w, T, f, s, S for mon-sat // check for non initial inputs*/
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int day;
+    
+    printf("Enter the number ");
+    scanf("%s", &day);
+    
+    switch (day) {
+        case 'm': printf("\nMonday");
+            break;
+        case 't': printf("\nTuesday");
+            break;
+        case 'w': printf("\nWednesday");
+            break;
+        case 'T': printf("\nThursday");
+            break;
+        case 'f': printf("\nFriday");
+            break;
+        case 's': printf("\nSaturday");
+            break;
+        case 'S': printf("\nSunday");
+            break;
+        default: printf("\nThe One");
+            break;
+    }
+    
+    return 0;
+}
+
+

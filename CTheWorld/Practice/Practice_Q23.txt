@@ -1,0 +1,32 @@
+/*Practice Question 23
+Write a program for nested if-else statements.*/
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int num;
+    
+    printf("Enter the number ");
+    scanf("%s", &num);
+    
+    if (num>0) {
+        printf("Positive");
+        if (num%2) == 0 {
+            printf("Even");
+        } else {
+            printf("Odd");
+        }
+    } else {
+        printf("Negative");
+        if (num%2) == 0 {
+            printf("Even");
+        } else {
+            printf("Odd");
+        }
+    }
+    
+    return 0;
+}
+
+

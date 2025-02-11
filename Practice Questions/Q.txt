@@ -1,0 +1,41 @@
+Here are the practice questions to practice in different programming languages					+4
+
+0} Program to print hello world, datatypes, taking inputs, operators
+1} Area of square
+2} Perimeter and Area of circle
+3} Area of Rectangle
+4} n cube
+5} celsius to fahrenheit && fahrenheit to celsius
+6} Simple Interest Calculator
+7} Compound Interest Calculator
+8} Area of triangle
+9} Usage of pow() function by <math.h> header file
+10} Float type to int type
+11} Usage of Logical operators
+12} Divisibility by 2  ||  odd or even
+13} Usage of && ||  and boolean values by 0 and 1
+14} Average of 3 numbers
+15} Age above 18
+16} Conditional if-else, else if ; combined with logical operators
+17} Age above 18 but with ternary statement
+18} Even Odd check by boolean, if-else, ternary
+19} Ñumber is positive, negative, or zero [advanced ternary operator usage]
+20} Switch Case mon-sat :: 1-7
+21} Fall Through Switch Case statements
+22} character usage in switch case
+23} Nested if-else statements
+24} Nested switch case
+25} Student passed or failed 
+26} Giving grades to the student
+27} UpperCase, LowerCase, NotanAlphabet
+28} Natural Number or not
+29} 
+30}
+31}
+
+
+
+
+
+
+

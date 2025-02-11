@@ -1,4 +1,4 @@
-/* Practice Question 5
+/* Practice Question 6
 Simple Interest Calculator */
 
 // includes

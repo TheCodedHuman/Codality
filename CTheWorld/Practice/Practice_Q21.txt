@@ -1,0 +1,37 @@
+/*Practice Question 21
+Write a program to use switch-case statements.
+here for 1-7 numbers for mon-sat // check for non 1-7 inputs*/
+// but for flow statements (fall-through)
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int team;
+    
+    printf("Enter the number");
+    scanf("%d", &team);
+    
+    switch (team) {
+        case 1: printf("\nCustomer Care");
+            // break;
+        case 2: printf("\nTesting Team");
+            // break;
+        case 3: printf("\nPersonal Assistance");
+            // break;
+        case 4: printf("\nManager");
+            // break;
+        case 5: printf("\nCEO");
+            // break;
+        case 6: printf("\nCompany");
+            // break;
+        case 7: printf("\nConsumer Helpline");
+            // break;
+        default: printf("\nThe One");
+            // break;
+    }
+    
+    return 0;
+}
+
+

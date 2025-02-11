@@ -1,0 +1,36 @@
+/*Practice Question 24
+Write a program for nested switch-case statements.*/
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int n, m;
+    
+    printf("\nEnter the number ");
+    scanf("%d", &n);
+    
+    switch (n) {
+        case 1: printf("1st Case");
+            printf("\nEnter the number ");
+            scanf("%d", &m);
+            
+            switch (m) {
+                case 5: 
+                    printf("Yooooo");
+                    break;
+                default: 
+                    printf("Bruh...");
+                    break;
+            }
+            break;
+        
+        default: 
+            printf("\nAyein");
+            break;
+    }
+    
+    return 0;
+}
+
+

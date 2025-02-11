@@ -1,0 +1,80 @@
+/*Practice Question 26
+Write a program to give grades to a student.
+
+marks < 30 => C
+30 <= marks < 70 => B
+70 <= marks < 90 => A
+90 <= marks < 100 => A+     */
+
+// includes
+#include<stdio.h>
+
+int main() {
+    int marks;
+    
+    printf("Enter the number ");
+    scanf("%d", &marks);
+
+    // by binary operator &&
+    printf("\n%d C", marks < 30);
+    printf("\n%d B", marks >= 30 && marks < 70);
+    printf("\n%d A", marks >= 70 && marks < 90);
+    printf("\n%d A+\n", marks >= 90 && marks < 100);
+    
+    
+    // by ternary operator
+    (marks < 30) ? printf("\nC") :
+    (marks < 70) ? printf("\nB"):
+    (marks < 90) ? printf("\nA"):
+    (marks <= 100) ? printf("\nA+"):
+    printf("\nEnter valid marks");
+    
+    
+    // by if-else, else if
+    if (marks < 30) {
+        printf("\nC");
+    } else if (marks < 70) {
+        printf("\nB");
+    } else if (marks < 90) {
+        printf("\nA");
+    } else if (marks <= 100) {
+        printf("\nA+");
+    } else {
+        printf("\nEnter Valid Marks");
+    }
+
+    // by switch-case
+    switch (marks < 30) {
+        case 1:             // marks < 30
+            printf("\nC");    
+            break;
+        case 0:             // marks >= 30
+            switch (marks < 70) {
+                case 1:     // 30 <= marks < 70
+                    printf("\nB");
+                    break;
+                case 0:     // marks >= 70
+                    switch (marks < 90) {
+                        case 1:     // 70 <= marks < 90
+                            printf("\nA");
+                            break;
+                        case 0:     // marks >= 90
+                            switch (marks <= 100) {
+                                case 1:     // marks < 100
+                                    printf("\nA+");
+                                    break;
+                                case 0:     // marks > 100
+                                    printf("\nEnter Valid Marks");
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
+            }
+            break;
+    }
+
+    return 0;
+}
+
+

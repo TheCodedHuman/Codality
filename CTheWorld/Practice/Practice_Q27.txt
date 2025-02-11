@@ -1,0 +1,67 @@
+/*Practice Question 27
+Write a program to check an input character is uppercase or lowercase // also check for other cases to be put in else/default.*/
+
+// includes
+#include<stdio.h>
+
+int main() {
+    char c;
+    
+    printf("Enter the number ");
+    scanf("%c", &c);
+    
+    // by binary operator &&
+    printf("\n%d UpperCase", c >= 'A' && c <= 'Z');
+    printf("\n%d LowerCase", c >= 'a' && c <= 'z');
+    printf("\n%d Not an Alphabet\n", !((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')));      //65-90:A-Z :: 97:122:a:z
+    
+    
+    
+    // by ternary operator
+    (c >= 'A' && c <= 'Z') ? printf("\nUpperCase") :
+    (c >= 'a' && c <= 'z') ? printf("\nlowerCase") :
+    printf("Not an Alphabet");
+    
+    
+    // by if-else, else if
+    if (c >= 'A' && c <= 'Z') {
+        printf("\nUpperCase");
+    } else if (c >= 'a' && c <= 'z') {
+        printf("\nlowerCase");
+    } else {
+        printf("Not an Alphabet");
+    }
+    
+
+    // by switch-case       oh nice, we can use if-else, boolean, ternary, switch-case nestedly in each of them interchangeably (for eg, if-else inside a switch case)
+    switch (c >= 'A' && c <= 'Z') {
+        case 1:
+            printf("\nUpperCase");
+            break;
+        case 0:
+            (c >= 'a' && c <= 'z');
+            break;
+        default:
+            printf("Not an Alphabet");
+            break;
+    }
+    
+/*                      We can use the switch case like this too
+    switch (1) {
+        case 1:
+                if (c >= 'A' && c <= 'Z') {
+                    printf("\nUpperCase");
+                } else if (c >= 'a' && c <= 'z') {
+                    printf("\nlowerCase");
+                } else {
+                    printf("Not an Alphabet");
+                }
+                break;
+    }
+*/
+
+    
+    return 0;
+}
+
+

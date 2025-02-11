@@ -9,6 +9,9 @@ int main() {
     
     printf("Enter the number");
     scanf("%d", &num);
+
+    // check by boolean
+    printf(num%2 != 0);         // to get even as 0 and odd as 1
     
     // check by True False
     printf("\n%d", num%2 != 0);
