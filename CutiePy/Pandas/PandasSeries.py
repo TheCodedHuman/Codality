@@ -56,7 +56,7 @@ data = [
 
 # defined
 
-def Series_1():                                                                                 # Basic attributes
+def series_1():                                                                                 # Basic attributes
     '''This function demonstrates the usage of index, values, dtype name, shape'''
     print("Index:", mySeries.index, "\n\n")
     print("Values:", mySeries.values, "\n\n")
@@ -65,7 +65,7 @@ def Series_1():                                                                 
     print("Shape:", mySeries.shape, "\n\n")
 
 
-def Series_2():                                                                                 # Basic Attributes
+def series_2():                                                                                 # Basic Attributes
     '''This function demonstrates the usage of size, nbytes, is_unique, empty, hasnans'''
     print("Size:", mySeries.size, "\n\n")
     print("Bytes Consumed:", mySeries.nbytes, "\n\n")
@@ -74,7 +74,7 @@ def Series_2():                                                                 
     print("Has NaNs:", mySeries.hasnans, "\n\n")
 
 
-def Series_3():                                                                                 # Index Attributes
+def series_3():                                                                                 # Index Attributes
     '''This function demonstrates the usage of index.name'''
     print("Axes:", mySeries.axes, "\n\n")
     mySeries.index.name = 'Students'
@@ -82,7 +82,7 @@ def Series_3():                                                                 
     print(mySeries, "\n\n")
 
 
-def Series_4():                                                                                 # Data and Statistics
+def series_4():                                                                                 # Data and Statistics
     '''This function demonstrates the usage of unique(), nunique(), count(), sum(), mean(), median()'''
     print("Unique Values:", mySeries.unique(), "\n\n")
     print("Number of Unique Values:", mySeries.nunique(), "\n\n")
@@ -92,7 +92,7 @@ def Series_4():                                                                 
     print("Median:", mySeries.median(), "\n\n")
 
 
-def Series_5():                                                                                 # Data and Statistics
+def series_5():                                                                                 # Data and Statistics
     '''This function demonstrates the usage of min(), max(), std(), var(), mode(), describe()'''
     print("Min:", mySeries.min(), "\n\n")
     print("Max:", mySeries.max(), "\n\n")
@@ -102,14 +102,14 @@ def Series_5():                                                                 
     print("Description of mySeries:",mySeries.describe(), sep= "\n\n", end= "\n\n")
 
 
-def Series_6():                                                                                 # Handling missing data
+def series_6():                                                                                 # Handling missing data
     '''This function demonstrates the usage of isnull(), notnull(), fillna(), dropna()'''
     print("Is Null:\n", mySeries.isnull(), "\n\n")
     print("Not Null:\n", mySeries.notnull(), "\n\n")
     print("Filled NaNs:\n", mySeries.fillna(0), "\n\n")
     print("Dropped NaNs:\n", mySeries.dropna(), "\n\n")
 
-def Series_7():                                                                                 # Value Manipulation
+def series_7():                                                                                 # Value Manipulation
     '''This function demonstrates the usage of apply(), map(), replace(), sort_values(), sort_index(), append()'''
     print("Applied Function (x^2):\n", mySeries.apply(lambda x: x**2 if pd.notnull(x) else x), "\n\n")
     print("Mapped Values (Increase by 10):\n", mySeries.map(lambda x: x + 10 if pd.notnull(x) else x), "\n\n")
@@ -118,7 +118,7 @@ def Series_7():                                                                 
     print("Sorted Index:\n", mySeries.sort_index(), "\n\n")
     print("Appended Series:\n", mySeries.append(pd.Series([95, 80], index=['Uma', 'Vera'])), "\n\n")
 
-def Series_8():                                                                                 # Value Manipulation
+def series_8():                                                                                 # Value Manipulation
     '''This function demonstrates the usage of drop(), clip(), cumsum(), cumprod(), cummix(), cummax()'''
     print("Dropped Elements (Alice and Bob):\n", mySeries.drop(['Alice', 'Bob']), "\n\n")
     print("Clipped Values (Min 80, Max 90):\n", mySeries.clip(80, 90), "\n\n")
@@ -133,14 +133,14 @@ mySeries = pd.Series(data= data, index= index, name= "Student Scores")
 print("\n\n")
 
 # print(mySeries, "\n\n")
-# Series_1()
-# Series_2()
-# Series_3()
-# Series_4()
-# Series_5()
-# Series_6()
-# Series_7()
-# Series_8()
+# series_1()
+# series_2()
+# series_3()
+# series_4()
+# series_5()
+# series_6()
+# series_7()
+# series_8()
 
 
 
